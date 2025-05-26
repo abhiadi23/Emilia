@@ -147,8 +147,6 @@ async def callback_query_handler(client, callback_query):
 
 
 clone_help = """
-Emilia Clones are exact replicas of @Elf_Robot but with a personalized name and profile picture, ensuring enhanced performance and stability.
-
 Clones inherit all functionalities, updates, and database entries from the original bot. When switching between clones in a group, there's no need to reconfigure settings.
 
 **To create a clone**:
@@ -166,13 +164,6 @@ To modify the profile picture of your clone, send /setuserpic to @BotFather, cho
 """
 
 help_text = """
-Nowadays, many people use foreign bots to manage their groups. But this can be risky as the bot owner can misuse your data.
-To solve this issue, we have introduced the clone feature. Without the need for any coding knowledge, database, hosting, or anything else, this feature allows you to clone @Elf_Robot to your own bots and manage your group without any privacy concerns.
-
-**Clone Commands:**
-
-• /clone `[bottoken]`: Clones @Elf_Robot to your provided bot. Make sure to remove the square brackets.
-• /deleteclone `[bottoken]`: Deletes the cloned bot from our server.
 • /setstartpic `[picurl]`: Sets the start pic for your cloned bot.
 • /broadcast `-flag [reply]`: Broadcasts the replied message to all the groups where the cloned bot is present.
 
@@ -186,7 +177,4 @@ Example:
 
 
 **Note:** The bot will get restarted every 12 hours and it uses the same database as the main bot. Please do not use this feature for illegal purposes. We will not be responsible for any misuse.
-
-PS: If you need any help, feel free to ask in our support group [here.](https://t.me/SpiralTechDivision) I have created this feature with my heart, and it took a lot of time and effort. So, please don't hesitate to /donate to keep this feature alive.
-In future, we might close this feature and make it premium. So, use it now and enjoy :3
 """
