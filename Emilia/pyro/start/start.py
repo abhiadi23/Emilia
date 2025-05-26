@@ -13,13 +13,13 @@ from Emilia.utils.decorators import *
 from Emilia.tele.clone import startpic
 
 START_TEXT = """
-Welcome to [{} :3]({})
+<b><blockquote>Hello {mention_user}<b><blockquote>
 
 This bot give varieties of features such as
 ➩ Group Management
 ➩ Spammer Protection
 ➩ Fun like chatbot
-➩ Clone, Ranking, AI System
+➩ Ranking, AI System
 ➩ Anime Loaded Modules
 
 Use the buttons buttons or /help to checkout even more!
@@ -36,16 +36,16 @@ async def starttt(client, message):
                 [InlineKeyboardButton("Help", callback_data="help_back")],
                 [
                     InlineKeyboardButton(
-                        "Support", url=f"https://t.me/{SUPPORT_CHAT}"
+                        "Support", url=f"https://t.me/seishiro_anime_chat"
                     ),
-                    InlineKeyboardButton("News", url=f"https://t.me/{UPDATE_CHANNEL}"),
+                    InlineKeyboardButton("Main hub...", url=f"https://t.me/seishiro_atanime"),
                 ],
-                [InlineKeyboardButton("How to Clone?", callback_data="clone_help")],
-                [InlineKeyboardButton("Source Code", url="https://github.com/ArshCypherZ/Emilia")],
+                [InlineKeyboardButton("Anime", url=f"https://t.me/seishiro_anime_is")],
+                [InlineKeyboardButton("Bot channel", url="https://t.me/+MIFq6K4VQ9tjNThl")],
             ]
             
             await message.reply_text(
-                START_TEXT.format(BOT_NAME, START_PIC),
+                START_TEXT.format(Mention_user, START_PIC),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 disable_web_page_preview=False,
             )
